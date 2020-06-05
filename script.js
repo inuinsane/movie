@@ -9,7 +9,7 @@ function cariFilm(keyword) {
     $('#movieList').html('');
     console.log('mencari film dengan judul : ' + keyword);
     $.ajax({
-        url: "http://www.omdbapi.com",
+        url: "https://www.omdbapi.com",
         type: 'get',
         dataType: 'json',
         data: {
@@ -53,7 +53,7 @@ function cariFilm(keyword) {
 // Ini adalah function mencari detail film
 $('#movieList').on('click', '.tombolDetail', function() {
     $.ajax({
-        url: "http://omdbapi.com/",
+        url: "https://omdbapi.com/",
         type: 'get',
         dataType: 'json',
         data: {
